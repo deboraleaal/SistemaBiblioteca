@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 public class Usuario {
 
-	private int codigo;
+	protected int codigo;
 	private String nome;
 	
 	//Todo usuario começa sem dever nada, logo inicia o devedor como falso
@@ -18,13 +18,13 @@ public class Usuario {
 	}
 
 
-	public int getIdUsuario() {
+	public int getCodigo() {
 		return codigo;
 	}
 
 
-	public void setIdUsuario(int idUsuario) {
-		this.codigo = idUsuario;
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
 
