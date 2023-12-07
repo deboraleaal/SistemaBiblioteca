@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class FazerReserva extends Usuario {
-    
+
+	//Construtor com a herança da classe Usuario
 		public FazerReserva(String nome, int codigo) {
 		super(nome, codigo);
-		// TODO Auto-generated constructor stub
 	}
 
 		public ArrayList<Reserva> getReservasUsuario() {
@@ -19,13 +19,13 @@ public class FazerReserva extends Usuario {
                     contadorDeReservas += 1;
                 }
             }
-//Precisa dar uma olhada nessa parte que ainda está apresentando erro.
 
     		if(contadorDeReservas < 3){
-    		  ReservasUsuario.add(livroReserva.tentarReserva(codigo));
+    		  ReservasUsuario.add(livroReserva.reservar(codigo));
+		  System.out.println("Reserva efetuada com sucesso!");
     		}else{
-    			System.out.println("Não foi possível efetuar reserva");
+    		  System.out.println("Não foi possível efetuar reserva");
     		}
     	}
 }  
-    
+     
