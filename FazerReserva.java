@@ -19,7 +19,7 @@ public class FazerReserva extends Usuario {
                     contadorDeReservas += 1;
                 }
             }
-//Precisa dar uma olhada nessa parte que ainda está apresentando erro
+//Precisa dar uma olhada nessa parte que ainda está apresentando erro.
 
     		if(contadorDeReservas < 3){
     		  ReservasUsuario.add(livroReserva.tentarReserva(codigo));
