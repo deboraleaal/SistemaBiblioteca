@@ -1,24 +1,30 @@
-
+import java.util.ArrayList;
 public class Usuario {
 
-	private int idUsuario;
+	private int codigo;
 	private String nome;
 	
+	//Todo usuario começa sem dever nada, logo inicia o devedor como falso
+	public boolean isDevedor = false;
 	
-	public Usuario(String nome, int idUsuario) {
+	//Precisamos guardar as informações de reserva e emprestimo
+	public ArrayList<Reserva> ReservasUsuario;
+	public ArrayList<Emprestimo> EmprestimosUsuario;
+	
+	public Usuario(String nome, int codigo) {
 		
-		this.idUsuario = idUsuario;
+		this.codigo = codigo;
 		this.nome = nome;
 	}
 
 
 	public int getIdUsuario() {
-		return idUsuario;
+		return codigo;
 	}
 
 
 	public void setIdUsuario(int idUsuario) {
-		this.idUsuario = idUsuario;
+		this.codigo = idUsuario;
 	}
 
 
@@ -30,7 +36,5 @@ public class Usuario {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
-	
 	
 }
